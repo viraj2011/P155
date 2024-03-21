@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="fish.js"></script>
+  <script src="treasure.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Register Fish Component -->
+    <a-entity fish-component></a-entity>
+
+    <!-- Register Treasure Component -->
+    <a-entity treasure-component></a-entity>
+
+    <!-- Assets (replace 'path/to/your/fish_model.gltf' and 'path/to/your/treasure_model.gltf') -->
+    <a-assets>
+      <a-asset-item id="fish-model" src="  ./assets/island/scene.gltf"></a-asset-item>
+      <a-asset-item id="treasure-model" src="./assets/treasure/model.gltf"></a-asset-item>
+    </a-assets>
+    
+    <!-- Fish Entity -->
+    <a-entity fish-component></a-entity>
+
+    <!-- Treasure Entity -->
+    <a-entity treasure-component></a-entity>
+
+  </a-scene>
+</body>
+</html>
